@@ -1,0 +1,39 @@
+.stats {
+    width: 320px;
+    margin: 0 auto;
+
+    min-height: 570px;
+    border: 1px solid green;
+}
+
+.stats__header {
+    padding: 30px;
+}
+
+.stats__list {
+    width: 100%;
+
+    height: 320px;
+}
+
+@media (min-width: $tablet-width) {
+    .stats {
+        width: 640px;
+        margin-top: -185px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .stats {
+        display: flex;
+        width: 960px;
+        margin-top: -160px;
+    }
+
+    .stats__header {
+        width: 320px;
+    }
+    .stats__list {
+        width: 640px;
+    }
+}

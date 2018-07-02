@@ -8,6 +8,11 @@
     height: 85px;
 }
 
+.page-header__logo-img {
+    display: block;
+    margin: 0 auto;
+}
+
 @media (min-width: $tablet-width) {
     .page-header__logo {
         order: 2;
