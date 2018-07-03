@@ -1,7 +1,7 @@
 .page-header {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    background-color: #242424;
 }
 
 .page-header__logo {
@@ -14,14 +14,33 @@
 }
 
 @media (min-width: $tablet-width) {
+    .page-header {
+        background-color: #000;
+    }
+
     .page-header__logo {
         order: 2;
+        width: 100%;
         height: 400px;
+        background-image: url('../img/bg-header.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .page-header__logo img {
+        width: 370px;
+        height: auto;
+        margin-top: 40px;
     }
 }
 
 @media (min-width: $desktop-width) {
     .page-header__logo {
         height: 648px;
+        background-size: cover;
+    }
+
+    .page-header__logo img {
+        margin-top: 60px;
     }
 }

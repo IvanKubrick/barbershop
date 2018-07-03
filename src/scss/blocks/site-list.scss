@@ -1,0 +1,31 @@
+.site-list a {
+    display: block;
+    padding: 12px 20px;
+    font-size: 18px;
+    @include font(18px, 24px);
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #826550;
+    border-top: 1px solid #886e5b;
+    border-bottom: 1px solid #71543f;
+
+    &[href] {
+        &:hover {
+            background-color: #755a46;
+            border-top-color: #755a46;
+        }
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .site-list {
+        width: 570px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .site-list {
+        width: 780px;
+    }
+}
